@@ -79,6 +79,13 @@
  * ==========================================================================
  */
 
+ @font-face {
+  font-family: 'LiteOn-Thin';
+  src: url('fonts/LiteOn-Thin.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 html {
   font-size: 16px;
   -moz-osx-font-smoothing: grayscale;
@@ -1747,14 +1754,28 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
  * 21. Logo
  * ======================================================================!*/
 .logo {
-  display: block;
-  font-family: "Oswald", sans-serif;
-  font-size: 16px;
-  line-height: 1.3;
-  font-weight: 500;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: #333333;
+  display: flex;
+  align-items: center;
+  font-family: 'LiteOn-Thin', sans-serif;
+}
+.logo-icon {
+  font-weight: bold;
+  font-size: 2rem;
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+}
+
+.logo-text{
+  font-size: 0.8rem;
+  font-weight: 400;
+  margin-bottom: -10px;
+}
+
+.logo-text2{
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 2px;
 }
 
 a.logo:focus {
@@ -3887,6 +3908,7 @@ select {
 .slider-headings {
   text-align: center;
   height: 100%;
+  width: 100%;
 }
 .slider-headings .slider__dot:before {
   background-color: #181818;
@@ -4017,6 +4039,8 @@ select {
     display: none;
   }
 }
+
+
 /*!========================================================================
  * 51. Slider Testimonials
  * ======================================================================!*/
