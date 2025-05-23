@@ -1408,15 +1408,9 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
 .header_white .logo {
   color: #ffffff;
 }
-
-.header_white .logo .logo-icon {
-  fill: #ffffff;
-}
-
 .header_white .logo:focus {
   color: #ffffff;
 }
-
 .header_white .header__burger-line {
   background-color: #ffffff;
 }
@@ -1765,7 +1759,6 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
   font-family: 'LiteOn-Thin', sans-serif;
 }
 .logo-icon {
-  fill: #000;
   font-weight: bold;
   font-size: 2rem;
   margin-right: 10px;
