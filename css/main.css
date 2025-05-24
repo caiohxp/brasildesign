@@ -1411,6 +1411,9 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
 .header_white .logo:focus {
   color: #ffffff;
 }
+.header_white .logo-icon{
+  fill: #ffffff;
+}
 .header_white .header__burger-line {
   background-color: #ffffff;
 }
