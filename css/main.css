@@ -2313,6 +2313,14 @@ a.logo {
   margin-bottom: 10px;
 }
 
+.section__headline-vertical {
+  display: block;
+  width: 1px;
+  height: 80px;
+  background-color: #181818;
+  margin-right: 10px;
+}
+
 .section_h-100 {
   height: 100px;
   max-height: 100vh;
@@ -3311,14 +3319,105 @@ a.logo {
     box-shadow: 0px 0px 1px 0px rgba(255, 255, 255, 0.1);
   }
 }
+.portfolio-section {
+  display: flex;
+  padding: 60px 40px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.portfolio-sidebar {
+  writing-mode: sideways-lr;
+  text-orientation: mixed;
+  margin-right: 30px;
+  font-family: sans-serif;
+}
+
+.portfolio-sidebar h2 {
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  color: #000;
+}
+
+.portfolio-sidebar span {
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  width: 80%;
+}
+
+.video-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.video-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
 /*!========================================================================
  * 44. Section Video
  * ======================================================================!*/
-.section-video {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
+.section-video__box{
+  margin-bottom: 50px;
+}
+
+.section-video__mi-text{
+  color: #888888;
+  letter-spacing: 5px;
+  font-weight: bold;
+}
+
+.section-video__item p{
+  letter-spacing: 4px;
+  font-size: 12px;
+  color: #888888;
+}
+
+.section-video__container-1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.section-video__container-2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+@media screen and (max-width: 767px) {
+  .section-video__container {
+    grid-template-columns: auto;
+  }
+}
+
+.section-video__thumb{
   width: 100%;
+  height: 100%;
 }
 
 .section-video__link {
@@ -3343,15 +3442,19 @@ a.logo {
 }
 
 .section-video__icon {
-  position: relative;
-  display: inline-flex !important;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
   align-items: center;
   justify-content: center;
   width: 80px;
   height: 80px;
   border-radius: 100%;
-  margin-top: 30px;
+  font-size: 48px;
 }
+
 .section-video__icon:focus {
   outline: none;
 }
@@ -4572,11 +4675,11 @@ a:focus {
   }
 
   h2 {
-    font-size: 26px;
+    font-size: 30px;
   }
 
   h3 {
-    font-size: 24px;
+    font-size: 27px;
   }
 
   h4 {
@@ -4597,11 +4700,11 @@ a:focus {
   }
 
   h2 {
-    font-size: 24px;
+    font-size: 26px;
   }
 
   h3 {
-    font-size: 19px;
+    font-size: 24px;
   }
 
   h4 {
