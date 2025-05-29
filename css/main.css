@@ -3531,6 +3531,11 @@ select {
   align-items: center;
 }
 
+.slider__title{
+  font-size: 32px;
+  margin-bottom: 50px;
+}
+
 .slider__caption {
   font-weight: 600;
   font-size: 20px;
