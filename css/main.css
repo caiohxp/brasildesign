@@ -820,6 +820,16 @@ div[class*=bg-image-] {
   position: relative;
 }
 
+.section-content__main-content .figure-member__wrapper-img img {
+  width: 100%;
+  max-width: 260px;
+  height: 340px;
+  object-fit: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .figure-member_has-social:hover .figure-member__wrapper-img img {
   transform: scale(1.1);
 }
@@ -4580,6 +4590,11 @@ select {
 .split-text, .split-chars {
   opacity: 0;
   visibility: hidden;
+}
+
+.split-text__link{
+  text-decoration: underline;
+  color: #888888;
 }
 
 .split-text__line {
