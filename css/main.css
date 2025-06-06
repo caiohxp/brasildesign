@@ -2282,6 +2282,15 @@ a.logo {
   padding-top: 100px;
 }
 
+.section_pl-small {
+  padding-left: 100px;
+}
+
+.section_pr-small {
+  padding-right: 100px;
+}
+
+
 .section_pb {
   padding-bottom: 200px;
 }
@@ -3401,6 +3410,20 @@ a.logo {
 /*!========================================================================
  * 44. Section Video
  * ======================================================================!*/
+.section-imersive__container img {
+  width: 100%;
+  max-width: 450px;   /* ajuste conforme o layout desejado */
+  height: 300px;      /* ajuste conforme o layout desejado */
+  object-fit: cover;  /* ou 'contain' se quiser mostrar a imagem inteira */
+  display: inline-block;
+  margin: 8px;
+}
+.section-imersive__container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center; /* centraliza as imagens */
+}
 
 .section-video__box{
   margin-bottom: 50px;
